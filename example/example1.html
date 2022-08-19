@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+
+<body>
+  <div id="app"></div>
+
+  <script src="./index.umd.js"></script>
+  <script>
+    const counter = new MyLib.Counter({
+      target: document.getElementById('app'),
+      props: {
+        content: 'ddfdfdfdfd',
+      },
+    })
+    counter.$on('changeContentParent', (childValue) => {
+      counter.$$set({ content: childValue.detail.val })
+    })
+  </script>
+</body>
+
+</html>
