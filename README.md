@@ -6,15 +6,11 @@
 好处是：无论用户使用什么前端框架（Vue, React, Angular 等），都可以引用基于 svelte 构建的组件库里的组件。
 因为 svelte 编译完的组件其实是 js 模块，即无框架组件。
 
-技术栈：vite + ts + svelte + less + unocss
+技术栈：vite + ts + svelte + less
 
 ## Usage
 
 ### 1.下载项目
-
-```javascript
-git clone https://github.com/cunzaizhuyi/svelte-ui-template
-```
 
 ### 2.开发组件
 
